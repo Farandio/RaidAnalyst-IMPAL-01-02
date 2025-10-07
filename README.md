@@ -35,7 +35,7 @@ Proyek ini adalah hasil kolaborasi. Silakan cek riwayat **Commits** pada *reposi
 | :--- | :--- | :--- |
 | Farandio Alkhalid | `@Farandio` | Backend & Expert Advisor 🌐 |
 | Danendra Urdha B.C.H | `@Rendyurdha` | Sentiment Analysis Core 🧐 |
-| [Nama Anggota 3] | `[@username_3]` | Technical Indicators & Logic 🚦 |
+| Muchammad kevin Ardiansyah | `@kevindk2422` | Technical Indicators & Logic 🚦 |
 | *[Jika ada anggota lain]* | *[Tambahkan di sini]* | *[Fokus/Tanggung Jawab]* |
 
 ---
