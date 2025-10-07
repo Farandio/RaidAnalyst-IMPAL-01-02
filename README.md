@@ -36,7 +36,7 @@ Proyek ini adalah hasil kolaborasi. Silakan cek riwayat **Commits** pada *reposi
 | Farandio Alkhalid | 1203230081 | `@Farandio` | Backend & Expert Advisor 🌐 |
 | Danendra Urdha B.C.H | 1203230110 | `@Rendyurdha` | Sentiment Analysis Core 🧐 |
 | Muchammad kevin Ardiansyah | 1203230096 | `@kevindk2422` | Technical Indicators & Logic 🚦 |
-| *[Jika ada anggota lain]* | NIM | *[Tambahkan di sini]* | *[Fokus/Tanggung Jawab]* |
+| Ramanda Rafky Muhammad Amin | 1203230069 | '@ramandarafky' | *[Fokus/Tanggung Jawab]* |
 
 ---
 
