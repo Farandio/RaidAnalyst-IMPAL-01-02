@@ -34,7 +34,7 @@ Proyek ini adalah hasil kolaborasi. Silakan cek riwayat **Commits** pada *reposi
 | Nama Anggota | GitHub Username | Fokus/Tanggung Jawab |
 | :--- | :--- | :--- |
 | Farandio Alkhalid | `@Farandio` | Backend & Expert Advisor 🌐 |
-| [Nama Anggota 2] | `[@username_2]` | Sentiment Analysis Core 🧐 |
+| Danendra Urdha B.C.H | `@Rendyurdha` | Sentiment Analysis Core 🧐 |
 | [Nama Anggota 3] | `[@username_3]` | Technical Indicators & Logic 🚦 |
 | *[Jika ada anggota lain]* | *[Tambahkan di sini]* | *[Fokus/Tanggung Jawab]* |
 
