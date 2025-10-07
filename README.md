@@ -34,7 +34,7 @@ Proyek ini adalah hasil kolaborasi. Silakan cek riwayat **Commits** pada *reposi
 | Nama Anggota | NIM | GitHub Username | Fokus/Tanggung Jawab |
 | :--- | :--- | :--- | :--- |
 | Farandio Alkhalid | 1203230081 | `@Farandio` | Backend & Expert Advisor 🌐 |
-| Danendra Urdha B.C.H | NIM | `@Rendyurdha` | Sentiment Analysis Core 🧐 |
+| Danendra Urdha B.C.H | 1203230110 | `@Rendyurdha` | Sentiment Analysis Core 🧐 |
 | Muchammad kevin Ardiansyah | NIM | `@kevindk2422` | Technical Indicators & Logic 🚦 |
 | *[Jika ada anggota lain]* | NIM | *[Tambahkan di sini]* | *[Fokus/Tanggung Jawab]* |
 
