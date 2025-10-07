@@ -46,7 +46,7 @@ Ikuti langkah-langkah ini untuk menjalankan *progress* PSPEC kami:
 
 1.  **Clone Repository:**
     ```bash
-    git clone [https://github.com/NamaOrganisasiAtauUser/RaidAnalyst.git](https://github.com/NamaOrganisasiAtauUser/RaidAnalyst.git)
+    git clone https://github.com/Farandio/RaidAnalyst-IMPAL-01-02
     ```
 2.  **Masuk ke Direktori Proyek:**
     ```bash
