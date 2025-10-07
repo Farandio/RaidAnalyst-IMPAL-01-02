@@ -54,7 +54,6 @@ Ikuti langkah-langkah ini untuk menjalankan *progress* PSPEC kami:
     ```
 3.  **Jalankan Kode:**
     ```bash
-    # Sesuaikan perintah ini dengan bahasa pemrograman Anda (misal: python, node, java)
     python main.py
     ```
     *Output yang diharapkan saat ini adalah tampilan konsol dari data dummy dan hasil analisis dasar.*
