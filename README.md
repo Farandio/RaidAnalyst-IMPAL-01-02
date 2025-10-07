@@ -31,12 +31,12 @@ Berikut adalah *skeleton* fitur-fitur yang sedang kami kembangkan sebagai bagian
 
 Proyek ini adalah hasil kolaborasi. Silakan cek riwayat **Commits** pada *repository* ini untuk melihat kontribusi setiap anggota!
 
-| Nama Anggota | GitHub Username | Fokus/Tanggung Jawab |
-| :--- | :--- | :--- |
-| Farandio Alkhalid | `@Farandio` | Backend & Expert Advisor 🌐 |
-| Danendra Urdha B.C.H | `@Rendyurdha` | Sentiment Analysis Core 🧐 |
-| Muchammad kevin Ardiansyah | `@kevindk2422` | Technical Indicators & Logic 🚦 |
-| *[Jika ada anggota lain]* | *[Tambahkan di sini]* | *[Fokus/Tanggung Jawab]* |
+| Nama Anggota | NIM | GitHub Username | Fokus/Tanggung Jawab |
+| :--- | :--- | :--- | :--- |
+| Farandio Alkhalid | 1203230081 | `@Farandio` | Backend & Expert Advisor 🌐 |
+| Danendra Urdha B.C.H | NIM | `@Rendyurdha` | Sentiment Analysis Core 🧐 |
+| Muchammad kevin Ardiansyah | NIM | `@kevindk2422` | Technical Indicators & Logic 🚦 |
+| *[Jika ada anggota lain]* | NIM | *[Tambahkan di sini]* | *[Fokus/Tanggung Jawab]* |
 
 ---
 
