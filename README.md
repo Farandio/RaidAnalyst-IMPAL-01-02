@@ -4,6 +4,12 @@
 
 ---
 
+## Latar Belakang 🔙
+
+Dinamika pasar finansial modern menuntut keputusan cepat berbasis data yang akurat. Namun, pedagang dan investor ritel seringkali kewalahan dengan kompleksitas analisis teknikal dan fundamental yang bergerak real-time. Oleh karena itu, diperlukan sebuah platform yang tidak hanya mengintegrasikan kedua jenis analisis tersebut menjadi sinyal yang mudah dipahami, tetapi juga menjamin keandalan dan keamanan data. Proyek website ini diinisiasi untuk menjembatani kesenjangan tersebut, sejalan dengan visi untuk menggunakan keahlian informatika guna memberikan manfaat konkret bagi masyarakat dalam pengambilan keputusan investasi.
+
+---
+
 ## Konsep Proyek 🎯
 
 Tujuan utama proyek ini adalah menjembatani kesenjangan antara informasi pasar yang melimpah dan kebutuhan keputusan *trading* yang cepat dan terinformasi. Kami fokus pada dua pilar utama:
