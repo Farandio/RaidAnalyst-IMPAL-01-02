@@ -21,6 +21,13 @@ Tujuan utama proyek ini adalah menjembatani kesenjangan antara informasi pasar y
 
 ## Fitur Utama (PSPEC - Progress Awal) 🏗️
 
+| Fitur | Deskripsi |
+| :--- | :--- |
+| **1. Insight fundamental** | 📡 isi news. |
+| **2. Sinyal Teknikal** | 💬 Pemberian informasi harga beli dan jual. |
+| **3. Notifikasi** | 📊 Push notification langsung ke user. |
+| **4. Signal Performance** | 🔔 Menunjukan Performa Dalam 1 bulan. |
+
 Berikut adalah *skeleton* fitur-fitur yang sedang kami kembangkan sebagai bagian dari **TUGAS #2 - Implementasi PSPEC**.
 
 | Fase Fitur | Deskripsi | Status |
