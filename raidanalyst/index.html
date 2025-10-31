@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Signals Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .signal-card { transition: all 0.3s ease; margin-bottom: 15px; }
+        .signal-card:hover { transform: translateY(-2px); box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        .status-pending { border-left: 5px solid #ffc107; }
+        .status-active { border-left: 5px solid #17a2b8; }
+        .status-failed { border-left: 5px solid #dc3545; }
+        .status-closed_tp { border-left: 5px solid #28a745; }
+        .status-closed_sl { border-left: 5px solid #6c757d; }
+        .status-expired { border-left: 5px solid #6c757d; }
+        .direction-buy { background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%); }
+        .direction-sell { background: linear-gradient(135deg, #f8d7da 0%, #f1b0b7 100%); }
+        .price-up { color: #28a745; font-weight: bold; }
+        .price-down { color: #dc3545; font-weight: bold; }
+        .connection-status { padding: 10px; border-radius: 5px; margin-bottom: 20px; }
+        .connected { background-color: #d4edda; color: #155724; }
+        .disconnected { background-color: #f8d7da; color: #721c24; }
+        .last-update { font-size: 0.8em; color: #6c757d; }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- Header -->
+        <div class="row bg-dark text-white p-3 mb-4">
+            <div class="col">
+                <h1><i class="fas fa-chart-line"></i> Trading Signals Dashboard</h1>
+                <p class="mb-0">Real-time signals from MT5 EA</p>
+            </div>
+            <div class="col-auto">
+                <div id="connectionStatus" class="connection-status disconnected">
+                    <i class="fas fa-plug"></i> <span id="statusText">Disconnected</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Filters -->
+        <div class="row mb-4">
+            <div class="col-md-3">
+                <label for="symbolFilter" class="form-label">Symbol</label>
+                <select id="symbolFilter" class="form-select">
+                    <option value="">All Symbols</option>
+                    <option value="XAUUSD">XAUUSD</option>
+                    <option value="EURUSD">EURUSD</option>
+                    <option value="GBPUSD">GBPUSD</option>
+                    <option value="USDJPY">USDJPY</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label for="statusFilter" class="form-label">Status</label>
+                <select id="statusFilter" class="form-select">
+                    <option value="">All Status</option>
+                    <option value="PENDING">Pending</option>
+                    <option value="ACTIVE">Active</option>
+                    <option value="FAILED">Failed</option>
+                    <option value="CLOSED_TP">Closed TP</option>
+                    <option value="CLOSED_SL">Closed SL</option>
+                    <option value="EXPIRED">Expired</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label for="directionFilter" class="form-label">Direction</label>
+                <select id="directionFilter" class="form-select">
+                    <option value="">All Directions</option>
+                    <option value="BUY">BUY</option>
+                    <option value="SELL">SELL</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label class="form-label">Actions</label>
+                <div>
+                    <button id="refreshBtn" class="btn btn-primary">
+                        <i class="fas fa-sync-alt"></i> Refresh
+                    </button>
+                    <button id="clearFiltersBtn" class="btn btn-secondary">
+                        <i class="fas fa-times"></i> Clear Filters
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Statistics -->
+        <div class="row mb-4">
+            <div class="col-md-2">
+                <div class="card text-white bg-primary">
+                    <div class="card-body">
+                        <h5 id="totalSignals">0</h5>
+                        <p class="card-text">Total Signals</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card text-white bg-warning">
+                    <div class="card-body">
+                        <h5 id="pendingSignals">0</h5>
+                        <p class="card-text">Pending</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card text-white bg-info">
+                    <div class="card-body">
+                        <h5 id="activeSignals">0</h5>
+                        <p class="card-text">Active</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card text-white bg-success">
+                    <div class="card-body">
+                        <h5 id="tpSignals">0</h5>
+                        <p class="card-text">TP Hit</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card text-white bg-danger">
+                    <div class="card-body">
+                        <h5 id="slSignals">0</h5>
+                        <p class="card-text">SL Hit</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card text-white bg-secondary">
+                    <div class="card-body">
+                        <h5 id="failedSignals">0</h5>
+                        <p class="card-text">Failed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Signals Container -->
+        <div class="row">
+            <div class="col-12">
+                <h3>Signals <span id="signalsCount" class="badge bg-secondary">0</span></h3>
+                <div id="signalsContainer" class="row">
+                    <!-- Signals will be loaded here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Last Update -->
+        <div class="row mt-4">
+            <div class="col-12 text-center">
+                <p class="last-update" id="lastUpdate">Last update: Never</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
