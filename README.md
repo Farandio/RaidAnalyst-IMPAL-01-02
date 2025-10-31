@@ -74,4 +74,4 @@ Ikuti langkah-langkah ini untuk menjalankan *progress* PSPEC kami:
 ---
 **Status Proyek:** **TUGAS #2 (W4) - Implementasi PSPEC**
 
-*Kami berkomitmen untuk terus mengembangkan RaidAnalyst menjadi solusi yang *powerful* dan intuitif!* 🌟
+*Kami berkomitmen untuk terus mengembangkan RaidAnalyst menjadi solusi yang *powerful* dan intuitif!!* 🌟
