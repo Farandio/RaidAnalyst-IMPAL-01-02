@@ -32,11 +32,11 @@ Berikut adalah *skeleton* fitur-fitur yang sedang kami kembangkan sebagai bagian
 
 | Fase Fitur | Deskripsi | Status |
 | :--- | :--- | :--- |
-| **1.1 Persiapan Lingkungan** | 📡 Menyiapkan struktur folder proyek dan DB terkonfigurasi. | **Progress ⚙️** |
-| **1.2 Desain Skema DB** | 💬 Skema database final. | **Progress ⚙️** |
-| **1.3 Pengembangan API Sinyal** | 📊 API endpoint sinyal (backend). | **Progress ⚙️** |
-| **1.4 Pengembangan EA** | 🔔 Logika program untuk hasil teknikal (MQL5). | **Progress ⚙️** |
-| **1.5 Verifikasi Real-time** | 🖥️ Uji integrasi MT5 -> API -> DB dengan latency yang normal dengan keandalan data. | **Progress ⚙️** |
+| **1.1 Persiapan Lingkungan** | 📡 Menyiapkan struktur folder proyek dan DB terkonfigurasi. | **Done ✅** |
+| **1.2 Desain Skema DB** | 💬 Skema database final. | **Done ✅** |
+| **1.3 Pengembangan API Sinyal** | 📊 API endpoint sinyal (backend). | **Done ✅** |
+| **1.4 Pengembangan EA** | 🔔 Logika program untuk hasil teknikal (MQL5). | **Done ✅** |
+| **1.5 Verifikasi Real-time** | 🖥️ Uji integrasi MT5 -> API -> DB dengan latency yang normal dengan keandalan data. | **Done ✅** |
 
 ---
 
