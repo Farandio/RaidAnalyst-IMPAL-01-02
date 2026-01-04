@@ -65,9 +65,13 @@ Ikuti langkah-langkah ini untuk menjalankan *progress* PSPEC kami:
     ```bash
     cd RaidAnalyst
     ```
-3.  **Jalankan Kode:**
+3.  **Jalankan Backend:**
     ```bash
-    python main.py
+    node server.js
+    ```
+3.  **Jalankan Frontend:**
+    ```bash
+    npm start
     ```
     *Output yang diharapkan saat ini adalah tampilan konsol dari data dummy dan hasil analisis dasar.*
 
