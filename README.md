@@ -76,6 +76,6 @@ Ikuti langkah-langkah ini untuk menjalankan *progress* PSPEC kami:
     *Output yang diharapkan saat ini adalah tampilan konsol dari data dummy dan hasil analisis dasar.*
 
 ---
-**Status Proyek:** **TUGAS #2 (W4) - Implementasi PSPEC**
+**Status Proyek:** **ALL DONE (need a minor improvement)**
 
 *Kami berkomitmen untuk terus mengembangkan RaidAnalyst menjadi solusi yang *powerful* dan intuitif!!* 🌟
