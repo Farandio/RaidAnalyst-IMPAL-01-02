@@ -1,0 +1,27 @@
+{
+  "name": "raidanalyst",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "trading",
+    "signals",
+    "mt5",
+    "api"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": "API for MT5 trading signals",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^5.2.1",
+    "mysql2": "^3.16.0",
+    "ws": "^8.18.3"
+  }
+}
