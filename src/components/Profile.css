@@ -1,0 +1,157 @@
+.profile-page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  background-color: #1a1a2e;
+  padding: 40px 20px;
+  color: #e2e8f0;
+}
+
+.profile-card {
+  background-color: #16213e;
+  width: 100%;
+  max-width: 500px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.photo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.photo-wrapper {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 2px solid #4f46e5;
+  overflow: hidden;
+  background-color: #0f172a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.photo-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Photo Buttons Layout */
+.photo-btn-group {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  justify-content: center;
+}
+
+.photo-action-btn {
+  flex: 0 1 130px; /* Ukuran tombol seragam */
+  padding: 10px 0;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  transition: opacity 0.2s;
+}
+
+.btn-change {
+  background-color: #4f46e5;
+  color: white;
+}
+
+.btn-remove {
+  background-color: #dc2626;
+  color: white;
+}
+
+.photo-action-btn:hover {
+  opacity: 0.85;
+}
+
+/* Form Styling */
+.input-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 13px;
+  color: #94a3b8;
+  margin-bottom: 6px;
+}
+
+input,
+textarea {
+  background-color: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 12px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.disabled-input {
+  background-color: #1e293b;
+  color: #64748b;
+  cursor: not-allowed;
+}
+
+.save-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.status-message {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+/* Tombol Kembali (Back Button) */
+.back-btn {
+  background: rgba(255, 255, 255, 0.05); /* Latar belakang transparan tipis */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Border halus */
+  color: #94a3b8; /* Warna abu-abu soft */
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Jarak antara panah dan teks */
+  transition: all 0.3s ease;
+  margin-bottom: 25px;
+  width: fit-content;
+}
+
+/* Efek Hover (Saat kursor di atas tombol) */
+.back-btn:hover {
+  background: rgba(79, 70, 229, 0.1); /* Background biru tipis */
+  border-color: #4f46e5; /* Warna border jadi biru */
+  color: #ffffff; /* Teks jadi putih terang */
+  transform: translateX(-4px); /* Animasi bergeser sedikit ke kiri */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Efek saat tombol diklik */
+.back-btn:active {
+  transform: scale(0.95) translateX(-4px);
+}

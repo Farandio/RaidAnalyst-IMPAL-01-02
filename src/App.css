@@ -1,0 +1,16 @@
+.login-page {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: radial-gradient(
+      circle at top,
+      rgba(120, 90, 255, 0.45),
+      transparent 60%
+    ),
+    linear-gradient(135deg, #0b0b2d, #000814);
+
+  overflow: hidden;
+}
